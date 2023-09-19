@@ -1,26 +1,17 @@
 {
-	"id": "main",
-	"label": "Main",
+	"id": "homepage",
+	"label": "homePage",
 	"format": "page",
-	"repeatable": true,
+	"repeatable": false,
 	"status": true,
 	"json": {
 		"Main": {
-			"uid": {
-				"config": {
-					"label": "UID"
-				},
-				"type": "UID"
-			},
 			"slices": {
 				"type": "Slices",
 				"fieldset": "Slice Zone",
 				"config": {
 					"choices": {
-						"members": {
-							"type": "SharedSlice"
-						},
-						"homepage": {
+						"navbar": {
 							"type": "SharedSlice"
 						}
 					}

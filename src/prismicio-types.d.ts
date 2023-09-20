@@ -69,7 +69,7 @@ export type HomepageDocument<Lang extends string = string> = prismic.PrismicDocu
 	Lang
 >;
 
-type MainDocumentDataSlicesSlice = MembersSlice | HomepageSlice;
+type MainDocumentDataSlicesSlice = MembersSlice;
 
 /**
  * Content for Main documents
@@ -135,33 +135,6 @@ export type MainDocument<Lang extends string = string> = prismic.PrismicDocument
 >;
 
 export type AllDocumentTypes = HomepageDocument | MainDocument;
-
-/**
- * Default variation for Homepage Slice
- *
- * - **API ID**: `default`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type HomepageSliceDefault = prismic.SharedSliceVariation<
-	'default',
-	Record<string, never>,
-	never
->;
-
-/**
- * Slice variation for *Homepage*
- */
-type HomepageSliceVariation = HomepageSliceDefault;
-
-/**
- * Homepage Shared Slice
- *
- * - **API ID**: `homepage`
- * - **Description**: Homepage
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type HomepageSlice = prismic.SharedSlice<'homepage', HomepageSliceVariation>;
 
 /**
  * Primary content in *Members → Items*
@@ -267,6 +240,33 @@ type NavbarSliceVariation = NavbarSliceDefault;
  */
 export type NavbarSlice = prismic.SharedSlice<'navbar', NavbarSliceVariation>;
 
+/**
+ * Default variation for Welkom Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type WelkomSliceDefault = prismic.SharedSliceVariation<
+	'default',
+	Record<string, never>,
+	never
+>;
+
+/**
+ * Slice variation for *Welkom*
+ */
+type WelkomSliceVariation = WelkomSliceDefault;
+
+/**
+ * Welkom Shared Slice
+ *
+ * - **API ID**: `welkom`
+ * - **Description**: Welkom
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type WelkomSlice = prismic.SharedSlice<'welkom', WelkomSliceVariation>;
+
 declare module '@prismicio/client' {
 	interface CreateClient {
 		(
@@ -284,9 +284,6 @@ declare module '@prismicio/client' {
 			MainDocumentData,
 			MainDocumentDataSlicesSlice,
 			AllDocumentTypes,
-			HomepageSlice,
-			HomepageSliceVariation,
-			HomepageSliceDefault,
 			MembersSlice,
 			MembersSliceDefaultItem,
 			MembersSliceVariation,
@@ -294,7 +291,10 @@ declare module '@prismicio/client' {
 			NavbarSlice,
 			NavbarSliceDefaultItem,
 			NavbarSliceVariation,
-			NavbarSliceDefault
+			NavbarSliceDefault,
+			WelkomSlice,
+			WelkomSliceVariation,
+			WelkomSliceDefault
 		};
 	}
 }

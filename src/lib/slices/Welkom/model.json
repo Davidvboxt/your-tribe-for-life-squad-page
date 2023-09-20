@@ -1,8 +1,8 @@
 {
-	"id": "homepage",
+	"id": "welkom",
 	"type": "SharedSlice",
-	"name": "Homepage",
-	"description": "Homepage",
+	"name": "Welkom",
+	"description": "Welkom",
 	"variations": [
 		{
 			"id": "default",

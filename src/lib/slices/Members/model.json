@@ -30,12 +30,12 @@
             "thumbnails": []
           }
         },
-        "link": {
+        "squadlink": {
           "type": "Link",
           "config": {
-            "label": "Link",
+            "label": "squadLink",
             "placeholder": "",
-            "select": null
+            "select": "media"
           }
         }
       }

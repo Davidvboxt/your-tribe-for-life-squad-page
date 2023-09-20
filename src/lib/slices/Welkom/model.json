@@ -1,16 +1,42 @@
 {
-	"id": "welkom",
-	"type": "SharedSlice",
-	"name": "Welkom",
-	"description": "Welkom",
-	"variations": [
-		{
-			"id": "default",
-			"name": "Default",
-			"docURL": "...",
-			"version": "initial",
-			"description": "Default",
-			"imageUrl": ""
-		}
-	]
+  "id": "welkom",
+  "type": "SharedSlice",
+  "name": "Welkom",
+  "description": "Welkom",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "squadimage": {
+          "type": "Image",
+          "config": {
+            "label": "squadImage",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "squadlink": {
+          "type": "Link",
+          "config": {
+            "label": "squadLink",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "squadname": {
+          "type": "Text",
+          "config": {
+            "label": "squadName",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
 }

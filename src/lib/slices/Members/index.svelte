@@ -4,7 +4,7 @@
 
 	/** @type {import("@prismicio/client").Content.ImageSlice} */
 
-	console.log(slice);
+	
 </script>
 
 <h1>Members van Squad A</h1>

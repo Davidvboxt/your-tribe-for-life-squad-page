@@ -7,13 +7,93 @@
 
 <section data-slice-type={slice.slice_type} data-slice-variation={slice.variation}>
 	
-	<img src={slice.items[0].squadimage.url} alt="">
-	
-	<a href={slice.items[0].squadlink.url}>Squad A</a>
+	<article class="allSquads">
 
-	<p>{slice.items[0].squadname}</p>
-	<img src={slice.items[1].squadimage.url} alt="">
-	<p>{slice.items[1].squadname}</p>
-	
+		<article class="squadA">
+			<img src={slice.items[0].squadimage.url} alt="">
+			<h1>{slice.items[0].squadname}</h1>
+		</article>
+
+		<article class="squadB">
+			<img src={slice.items[1].squadimage.url} alt="">
+			<h1 class="squadNameB">{slice.items[1].squadname}</h1>
+		</article>
+		
+	</article>
 
 </section>
+
+
+<style>
+	
+:root{
+	--textColor: white;
+	--backgroundColor: black;
+	--borderColor: red;
+	--borderSize: 5px;
+}
+
+.allSquads{
+	display: flex;
+	background-color: var(--backgroundColor);
+}
+
+.squadA{
+	color: var(--textColor);
+	padding: 20px;
+	margin: 0 auto;
+	margin-bottom:50px;
+	border: var(--borderSize);
+	border-color: var(--borderColor);
+	border-style: solid;
+}
+.squadB{
+	color: var(--textColor);
+	margin-top: 50px;
+	margin: 0 auto;
+	border: var(--borderSize);
+	border-color: var(--borderColor);
+	border-style: solid;
+}
+
+.squadNameB{
+	margin-left: 20px;
+}
+
+
+
+
+
+.squadA:hover{
+  animation-name: scale;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.squadB:hover{
+  animation-name: scale;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes scale {
+0%{
+  scale: 1;
+}
+50%{
+  scale: 1.1;
+}
+100% {
+    scale: 1;
+  }
+}
+
+
+@media (max-width: 700px){
+  .allSquads{
+      display: flex;
+      flex-direction: column;
+      
+  }
+}
+
+</style>

@@ -11,7 +11,7 @@
 
 		<article class="squadA">
 			<img src={slice.items[0].squadimage.url} alt="">
-			<h1>{slice.items[0].squadname}</h1>
+			<h1 class="squadNameA">{slice.items[0].squadname}</h1>
 		</article>
 
 		<article class="squadB">
@@ -47,6 +47,11 @@
 	border-color: var(--borderColor);
 	border-style: solid;
 }
+.squadNameA{
+	text-align: center;
+	font-size: 36px;
+}
+
 .squadB{
 	color: var(--textColor);
 	margin-top: 50px;
@@ -57,7 +62,8 @@
 }
 
 .squadNameB{
-	margin-left: 20px;
+	text-align: center;
+	font-size: 36px;
 }
 
 

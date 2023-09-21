@@ -18,8 +18,11 @@
 
 
 <style>
-
+:root{
+	background-color: black;
+}
 .navBar{
+	background-color: white;
 	display: flex;
 	justify-content: space-around;
 	border-bottom: 2px;
@@ -30,6 +33,7 @@
 
 .navItem{
 	text-decoration: none;
+	color:blue;
 }
 
 </style>

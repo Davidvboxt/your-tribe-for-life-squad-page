@@ -9,14 +9,20 @@
 	
 	<article class="allSquads">
 
-		<article class="squadA">
-			<img src={slice.items[0].squadimage.url} alt="">
-			<h1 class="squadNameA">{slice.items[0].squadname}</h1>
-		</article>
+		
+			<article class="squadA">
+				<a class="link" href="/squad-a">
+					<img src={slice.items[0].squadimage.url} alt="">
+					<h1 class="squadNameA">{slice.items[0].squadname}</h1>
+				</a>
+			</article>
+		
 
 		<article class="squadB">
-			<img src={slice.items[1].squadimage.url} alt="">
-			<h1 class="squadNameB">{slice.items[1].squadname}</h1>
+			<a class="link" href="/squad-b">
+				<img src={slice.items[1].squadimage.url} alt="">
+				<h1 class="squadNameB">{slice.items[1].squadname}</h1>
+			</a>
 		</article>
 		
 	</article>
@@ -31,6 +37,11 @@
 	--backgroundColor: black;
 	--borderColor: red;
 	--borderSize: 5px;
+}
+
+.link{
+	text-decoration: none;
+	color: white;
 }
 
 .allSquads{

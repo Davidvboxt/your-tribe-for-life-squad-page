@@ -48,6 +48,7 @@
 	margin-left: 25%;
 	margin-bottom: 30px;
 	color: white;
+	font-size: 28px;
 }
 
 .link{
@@ -135,7 +136,7 @@
   }
 }
 
-@media (min-width: 385px){
+@media (min-width: 460px){
   .title{
       margin-left: 40%;
       

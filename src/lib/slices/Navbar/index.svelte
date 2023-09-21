@@ -9,9 +9,9 @@
 	
 	<article>
 		<nav class="navBar">
-			<a class="navItem" href=""><h3>Home</h3></a>
-			<a class="navItem" href=""><h1>Squad-A</h1></a>
-			<a class="navItem" href=""><h1>Squad-B</h1></a>
+			<a class="navItem" href="/"><h3>Home</h3></a>
+			<a class="navItem" href="/"><h1>Squad-A</h1></a>
+			<a class="navItem" href="/"><h1>Squad-B</h1></a>
 		</nav>
 	</article>
 </section>
@@ -22,7 +22,7 @@
 	background-color: black;
 }
 .navBar{
-	background-color: white;
+	background-color: black;
 	display: flex;
 	justify-content: space-around;
 	border-bottom: 2px;
@@ -33,7 +33,30 @@
 
 .navItem{
 	text-decoration: none;
-	color:blue;
+	color:white;
+	
+}
+
+.navItem:hover{
+  animation-name: scale;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  
+  
+}
+
+@keyframes scale {
+0%{
+  scale: 1;
+  color: white;
+}
+
+100% {
+    scale: 1.3;
+	color: aqua;
+  }
+
+  
 }
 
 </style>

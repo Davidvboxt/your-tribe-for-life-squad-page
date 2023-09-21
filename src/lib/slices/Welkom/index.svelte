@@ -7,6 +7,9 @@
 
 <section data-slice-type={slice.slice_type} data-slice-variation={slice.variation}>
 	
+
+	<h1 class="title">Kies een squad!</h1>
+
 	<article class="allSquads">
 
 		
@@ -36,7 +39,15 @@
 	--textColor: white;
 	--backgroundColor: black;
 	--borderColor: red;
-	--borderSize: 5px;
+	--squadBorderColor: white;
+	--squadBorderSize: 2px;
+	--borderSize: 3px;
+	
+}
+.title{
+	margin-left: 25%;
+	margin-bottom: 30px;
+	color: white;
 }
 
 .link{
@@ -57,24 +68,35 @@
 	border: var(--borderSize);
 	border-color: var(--borderColor);
 	border-style: solid;
+	box-shadow: 10px 5px  red;
 }
 .squadNameA{
 	text-align: center;
 	font-size: 36px;
+	padding: 5px;
+	border: var(--squadBorderSize);
+	border-color: var(--squadBorderColor);
+	border-style: solid;
 }
 
 .squadB{
 	color: var(--textColor);
 	margin-top: 50px;
+	padding: 20px;
 	margin: 0 auto;
 	border: var(--borderSize);
 	border-color: var(--borderColor);
 	border-style: solid;
+	box-shadow: 10px 5px  red;
 }
 
 .squadNameB{
 	text-align: center;
 	font-size: 36px;
+	padding: 5px;
+	border: var(--squadBorderSize);
+	border-color: var(--squadBorderColor);
+	border-style: solid;
 }
 
 
@@ -105,10 +127,17 @@
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 760px){
   .allSquads{
       display: flex;
       flex-direction: column;
+      
+  }
+}
+
+@media (min-width: 385px){
+  .title{
+      margin-left: 40%;
       
   }
 }

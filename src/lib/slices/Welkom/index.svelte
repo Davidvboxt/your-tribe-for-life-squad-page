@@ -42,8 +42,8 @@
 	--squadBorderColor: white;
 	--squadBorderSize: 2px;
 	--borderSize: 3px;
-	
 }
+
 .title{
 	margin-left: 25%;
 	margin-bottom: 30px;
@@ -132,14 +132,12 @@
   .allSquads{
       display: flex;
       flex-direction: column;
-      
   }
 }
 
 @media (min-width: 460px){
   .title{
       margin-left: 40%;
-      
   }
 }
 

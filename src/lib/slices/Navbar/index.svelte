@@ -41,8 +41,6 @@
   animation-name: scale;
   animation-duration: 1s;
   animation-iteration-count: infinite;
-  
-  
 }
 
 @keyframes scale {
@@ -55,8 +53,6 @@
     scale: 1.3;
 	color: aqua;
   }
-
-  
 }
 
 </style>

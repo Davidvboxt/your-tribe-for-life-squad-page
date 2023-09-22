@@ -18,15 +18,15 @@
 	</article>
 </section>
 
-<h1>Members van Squad A</h1>
+<h1 class="squad-a" >Members van de Squad</h1>
 
 <section class="student-page">
 	{#each slice.items as item}
-		<article class="student-card">
+		<a class="link" href={item.link.url}><article class="student-card">
 			<h2 class="student-name" >{item.name[0].text}</h2>
-			<center><img src={item.image.url} alt="" /></center>
-			<p class="student-name">Go to my <a href={item.link.url}>Github</a>!</p>
-		</article>
+			<center><img loading="lazy" src={item.image.url} alt="" /></center>
+			<p class="student-name">Go to my Github</p>
+		</article></a>
 	{/each}
 </section>
 
@@ -57,6 +57,16 @@
 	color: red;
 }
 
+.link {
+	text-decoration: none;
+}
+
+.squad-a {
+	color: white;
+	text-align: center;
+	padding-bottom: 40px;
+}
+
 	.student-page {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
@@ -68,6 +78,7 @@
 	.student-name {
 		text-align: center;
 		align-items: center;
+
 	}
 	.student-card {
 		
@@ -81,10 +92,51 @@
 		box-shadow: 10px 15px 20px #ff0000;
 		width: 15rem;
 		height: 300px;
+
 	}
 
 	article img {
 		height: 10em;
 		widows: 10em;
 	}
+
+	.student-card:hover{
+  animation-name: scale;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.student-card:hover{
+  animation-name: scale;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes scale {
+0%{
+  scale: 1;
+}
+50%{
+  scale: 1.1;
+}
+100% {
+    scale: 1;
+  }
+}
+
+@media (max-width: 1200px){
+  .student-page{
+      display: grid;	
+      flex-direction: column;
+	  grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px){
+  .student-page{
+      display: grid;	
+      flex-direction: column;
+	  grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 </style>

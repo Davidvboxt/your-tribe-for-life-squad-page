@@ -10,8 +10,8 @@
 	<article>
 		<nav class="navBar">
 			<a class="navItem" href="/"><h3>Home</h3></a>
-			<a class="navItem" href="/"><h1>Squad-A</h1></a>
-			<a class="navItem" href="/"><h1>Squad-B</h1></a>
+			<a class="navItem" href="/squad-a"><h1>Squad-A</h1></a>
+			<a class="navItem" href="/squad-b"><h1>Squad-B</h1></a>
 		</nav>
 	</article>
 </section>

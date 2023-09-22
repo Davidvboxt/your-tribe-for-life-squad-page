@@ -45,7 +45,6 @@
 	
 }
 .title{
-	margin-left: 25%;
 	margin-bottom: 30px;
 	color: white;
 	font-size: 28px;
@@ -69,7 +68,7 @@
 	border: var(--borderSize);
 	border-color: var(--borderColor);
 	border-style: solid;
-	box-shadow: 10px 5px  red;
+	box-shadow: 10px 15px 20px #ff0000;
 }
 .squadNameA{
 	text-align: center;
@@ -88,7 +87,7 @@
 	border: var(--borderSize);
 	border-color: var(--borderColor);
 	border-style: solid;
-	box-shadow: 10px 5px  red;
+	box-shadow: 10px 15px 20px #ff0000;
 }
 
 .squadNameB{

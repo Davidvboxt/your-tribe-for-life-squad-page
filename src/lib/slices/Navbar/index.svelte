@@ -37,22 +37,10 @@
 	
 }
 
-.navItem:hover{
-  animation-name: scale;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes scale {
-0%{
-  scale: 1;
-  color: white;
-}
-
-100% {
-    scale: 1.3;
-	color: aqua;
-  }
+.navItem:hover {
+	transform: scale(1.3);
+	transition-duration: 1s;
+	color: red;
 }
 
 </style>
